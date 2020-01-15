@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <li v-for="item in info" :key="item">{{item}}</li>
+    <button @click="btn">操作</button>
+</div>
+<script src="../vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            info: ['a','b','c','d','e']
+        },
+        methods: {
+            btn() {
+                //1.push添加元素
+                //this.info.push('f')
+                //2.pop删除元素
+                //this.info.pop()
+                //3.shift前面的元素
+                //this.info.shift()
+                //4.unshift在前面添加元素
+                //this.info.unshift('aaa','bbb','ccc')
+                //5.利用splice删除元素
+                //this.info.splice(0,2)
+                //6.利用splice替换元素
+                //this.info.splice(1,2,'z','x')
+                //7.利用splice添加元素
+                this.info.splice(1,0,'aaa','bbb')
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <div>{{counter}}</div>
+    <!--1.第一种 将变量在事件监听中操作-->
+    <!--<button v-on:click="counter++">+</button>-->
+    <!--<button v-on:click="counter&#45;&#45;">-</button>-->
+    <!--2.第二种：监听操作改为函数-->
+    <button v-on:click="increment">+</button>
+    <button v-on:click="decrement">-</button>
+    <!--3.事件监听的语法糖-->
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+</div>
+<script src="../vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            counter: 0
+        },
+        methods: {
+            increment() {
+                this.counter++
+            },
+            decrement() {
+                this.counter--
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button>按钮</button>
+<button>按钮</button>
+<button>按钮</button>
+<button>按钮</button>
+<button>按钮</button>
+<button>按钮</button>
+<script>
+    //
+    if(true){
+        var num = 1;
+        console.log(num);
+    }
+
+    console.log(num);
+
+
+    // 1.变量作用域:变量在什么范围内是可用
+    // {
+    //     var name = 'why';
+    //     console.log(name)
+    // }
+    // console.log(name);
+
+    // 2.没有块级作用域引起的问题(if引起的问题
+    // func变了)
+    // var func;
+    // if(true){
+    //     var name = 'wunan'
+    //     func = function () {
+    //         console.log(name)
+    //     }
+    //     func()
+    // }
+    // func = 1;
+    // func();
+    // console.log(name)
+
+    //3.没有块级作用域引起的问题，for块级
+    var btns = document.getElementsByTagName('button');
+    for(var i = 0; i<btns.length; i++){
+        btns[i].addEventListener('click', function () {
+            console.log('第' + i + '个按钮被点击');
+        })
+    }
+</script>
+</body>
+</html>

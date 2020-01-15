@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--时间调用的方法没有参数-->
+    <button @click="btn1Click()">按钮1</button>
+    <button @click="btn1Click">按钮2</button>
+    <!--事件定义时，写方法时忽略了小括号，但是方法本身需要一个参数的，这个时候，Vue会默认的将浏览器产生的
+    event事件传入到参数参数中-->
+    <!--如果想手动传入event 参数位写$event就行了-->
+    <button @click="btn2Click()">按钮3</button>
+    <button @clcik="btn2Click(18,evnet)">按钮4</button>
+</div>
+
+</div>
+<script src="../vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+
+        },
+        methods: {
+            btn1Click() {
+                console.log("btn1Click")
+            },
+            btn2Click(e){
+                console.log(e)
+            },
+            btn3Click(num,event){
+                console.log(num,event)
+            }
+        }
+    })
+</script>
+</body>
+</html>

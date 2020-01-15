@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--finalSize当成是一个变量使用-->
+    <!--50px必须加上单引号使用，否则会被认为是一个变量-->
+    <!--<h2 :style="{fontSize: '50px'}">{{message}}</h2>-->
+    <h2 :style="{fontSize: finalSize}">{{message}}</h2>
+</div>
+<script src="../vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message : '你好啊',
+            finalSize: '100px',
+        }
+    })
+</script>
+</body>
+</html>

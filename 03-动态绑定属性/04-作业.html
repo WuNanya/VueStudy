@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <li v-on:click="btn(index)" :class="{active: index == count}" v-for="(m,index) in list">{{index+"-"+m}}</li>
+</div>
+<script src="../vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            list: ['天线宝宝','海绵宝宝','变形金刚','奥特曼'],
+            count: true
+        },
+        methods: {
+            btn: function (index) {
+                this.count = index
+            }
+        }
+
+    })
+</script>
+</body>
+</html>
