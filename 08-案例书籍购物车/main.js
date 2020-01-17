@@ -47,7 +47,7 @@ const app = new Vue({
         }
     },
     computed: {
-        // total() {
+        // total()
         //     //1.普通的for循环遍历
         //     let totalprice = 0;
         //     for(let i = 0; i < this.books.length; i++){
