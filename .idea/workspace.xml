@@ -117,11 +117,12 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="510" y="205" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.23.1440.814@0.23.1440.814" timestamp="1578737266246" />
-    <state x="314" y="50" key="CommitChangelistDialog2" timestamp="1579258131567">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="314" y="50" key="CommitChangelistDialog2" timestamp="1579258571993">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="314" y="54" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1579089261794" />
     <state x="314" y="50" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1579183386821" />
+    <state x="314" y="50" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1579258571993" />
     <state x="314" y="50" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1579258131567" />
     <state x="314" y="57" key="CommitChangelistDialog2/0.23.1440.829@0.23.1440.829" timestamp="1579089173040" />
     <state x="587" y="350" key="Github.ShareDialog" timestamp="1579057948850">
@@ -136,12 +137,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1579057931033" />
-    <state x="320" y="198" key="Vcs.Push.Dialog.v2" timestamp="1579258527985">
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2" timestamp="1579258577670">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1579089270491" />
     <state x="320" y="197" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1579183395867" />
-    <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1579258527985" />
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1579258577670" />
     <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1579258136197" />
     <state x="17" y="160" width="670" height="679" key="search.everywhere.popup" timestamp="1578821378545">
       <screen x="0" y="23" width="1440" height="814" />
