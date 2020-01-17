@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <cpn v-on:itemclick="cpnclick"></cpn>
+</div>
+<template id="cpn">
+    <div>
+        <button v-on:click="btnclick(item)" v-for="item in info">{{item.name}}</button>
+    </div>
+</template>
+
+<script src="../vue.js"></script>
+<script>
+    const cpn = {
+        template: '#cpn',
+        data() {
+            return {
+                info: [
+                    {id: 'aaa', name: '热门推荐'},
+                    {id: 'bbb', name: '手机数码'},
+                    {id: 'ccc', name: '家具家电'},
+                    {id: 'ddd', name: '电脑办公'},
+                ]
+            }
+        },
+        methods: {
+            btnclick(item) {
+                this.$emit('itemclick',item)
+            }
+        }
+    }
+
+
+    const app = new Vue({
+        el: '#app',
+        components: {
+            cpn
+        },
+        methods: {
+            cpnclick(item) {
+                console.log('cpnclick',item)
+            }
+        }
+    })
+</script>
+</body>
+</html>

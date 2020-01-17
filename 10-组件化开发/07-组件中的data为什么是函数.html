@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <cpn></cpn>
+</div>
+
+<template id="cpn">
+    <div>
+        <h2>当前计数：{{count}}</h2>
+        <button v-on:click="increment">+</button>
+        <button v-on:click="decrement">-</button>
+    </div>
+
+</template>
+
+<script src="../vue.js"></script>
+<script>
+    //1. 注册组件
+    Vue.component('cpn', {
+        template: '#cpn',
+        //data函数
+        data() {
+            return {
+                count: 0
+            }
+        },
+        methods: {
+            increment() {
+                this.count++;
+            },
+            decrement() {
+                this.count--;
+            }
+        }
+    });
+    const app = new Vue({
+        el: '#app',
+    })
+</script>
+</body>
+</html>
